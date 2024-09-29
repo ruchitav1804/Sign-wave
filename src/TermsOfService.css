@@ -1,0 +1,30 @@
+.terms-of-service-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 50px 20px;
+  }
+  
+  .terms-of-service-content {
+    background-color:cornsilk;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .dark-mode .terms-of-service-content {
+    background-color: #333;
+  }
+  
+  .terms-of-service-title {
+    color: #333;
+    font-size: 34px;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .terms-of-service-text {
+    color: #666;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  

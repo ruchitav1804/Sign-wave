@@ -1,0 +1,114 @@
+/* ISL Container Styling */
+.isl-container {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background to match main CSS */
+  color: white;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+.dark-mode .isl-container {
+  background-color: rgba(4, 4, 4, 0.5);
+}
+
+/* Numbers Section */
+.numbers-section {
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 1.5rem; /* Consistent font size */
+  width: 100%;
+}
+
+/* Bordered Heading */
+.bordered-heading {
+  border: 4px solid #000000; /* Border color and thickness */
+  margin: 2px 0; /* Space around the heading */
+  border-radius: 8px; /* Rounded corners */
+  text-align: center;
+  text-decoration: underline;
+  background-color: rgba(0, 0, 0, 0.5); /* Darker background for contrast */
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Heading Style */
+h2 {
+  font-size: 2.5rem; /* Matches the heading size from main CSS */
+}
+
+/* Alphabets Section */
+.alphabets-section {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1.5rem; /* Consistent font size */
+}
+
+/* Grid Container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-items: center;
+  gap: 10px; /* Increased gap for better spacing */
+  padding: 20px 0 0 0;
+  width: 100%;
+}
+
+/* Grid Box Styling */
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  height: 100px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.5); /* Matches the semi-transparent background */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  color: white; /* Text color to match overall theme */
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Image inside Box */
+.box-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+
+/* Label inside Box */
+.box-label {
+  font-size: 1.2rem; /* Adjusted for better readability */
+  font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(5, 1fr); /* Adjust for tablets and smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr); /* Adjust for smaller tablets and large phones */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr); /* Adjust for mobile phones */
+  }
+  .box {
+    height: 80px; /* Adjust box size for mobile */
+    width: 80px;
+  }
+}

@@ -1,0 +1,151 @@
+.footer {
+    Background-color: rgb(30, 30, 30,0.9);
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    padding: 15px 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+  }
+  
+  .dark-mode .footer {
+    background-color: rgba(4, 4, 4, 0.5);
+    color: #fff;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex:wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-text {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+  
+  .footer-links {
+    margin-top: 16px;
+  }
+  
+  .footer-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: #00bcd4;
+  }
+  
+  .social-icons {
+    margin-top: 16px;
+  }
+  
+  .social-icon {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 200px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #00bcd4;
+  }
+  
+  /* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-link {
+      margin-right: 0;
+      margin-bottom: 10px;
+      font-size: 12px;
+  }
+
+  .social-icon {
+      font-size: 16px;
+      margin-right: 10px;
+  }
+
+  .footer-text {
+      font-size: 12px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-link {
+      margin-right: 0;
+      margin-bottom: 10px;
+      font-size: 13px;
+  }
+
+  .social-icon {
+      font-size: 16px;
+      margin-right: 10px;
+  }
+
+  .footer-text {
+      font-size: 13px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .footer-link {
+      margin-right: 15px;
+      font-size: 14px;
+  }
+
+  .social-icon {
+      font-size: 18px;
+      margin-right: 15px;
+  }
+
+  .footer-text {
+      font-size: 14px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .footer-content {
+      flex-direction: row;
+      justify-content: space-between;
+  }
+
+  .footer-link {
+      font-size: 16px;
+  }
+
+  .social-icon {
+      font-size: 16px;
+  }
+
+  .footer-text {
+      font-size: 16px;
+  }
+}

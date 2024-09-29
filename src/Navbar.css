@@ -1,0 +1,88 @@
+/* Add styles specific to the Navbar component */
+.navbar {
+  display: block;
+  Background-color: rgb(30, 30, 30,0.9);
+  color:white;
+  padding: 10px;
+  margin-bottom: 20px;
+  }
+
+.dark-mode .navbar {
+    background-color: rgba(4, 4, 4, 0.5);
+    color: white;
+  }
+  
+  .navbar-brand {
+    font-size: 3.5rem;
+    color: white;
+    font-family: 'Brush script mt';
+  }
+
+  
+  .navbar-nav {
+    margin-left: auto;
+    gap: 10px;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Tablets and medium devices */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column; /* Stack items vertically */
+      padding: 15px; /* Increased padding for touch targets */
+  }
+
+  .navbar-brand {
+      font-size: 2rem; /* Slightly smaller brand font */
+  }
+
+  .nav-link {
+      font-size: 0.9rem; /* Smaller font size for links */
+  }
+}
+
+/* Small devices (phones) */
+@media (max-width: 480px) {
+  .navbar {
+      padding: 10px; /* Reduced padding */
+  }
+
+  .navbar-brand {
+      font-size: 1.5rem; /* Smaller brand font */
+  }
+
+  .nav-link {
+      font-size: 0.8rem; /* Smaller font size for links */
+  }
+}
+
+/* Extra small devices (very small phones) */
+@media (max-width: 320px) {
+  .navbar {
+      padding: 8px; /* Even smaller padding */
+  }
+
+  .navbar-brand {
+      font-size: 1.3rem; /* Adjust brand font size */
+  }
+
+  .nav-link {
+      font-size: 0.7rem; /* Adjust link font size */
+      margin-right: 5px; /* Reduced margin */
+  }
+}

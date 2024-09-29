@@ -1,0 +1,161 @@
+.contact-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  color: black; /* White text color */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+}
+
+.dark-mode .contact-us-container {
+  background-color: rgba(4, 4, 4, 0.5);
+}
+
+.contact-us-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-us-container p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.dark-mode .form-group label {
+  color: #fff; /* White text color */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #080808; /* White border */
+  border-radius: 5px;
+  background-color: transparent; /* Transparent background */
+  color: black; /* White text color */
+}
+
+.dark-mode .form-group input[type="text"],
+.dark-mode .form-group input[type="email"],
+.dark-mode .form-group textarea {
+  color: #fff; /* White text color */
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: lightblue; /* White background */
+  color: #000; /* Black text color */
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ddd; /* Light gray on hover */
+}
+
+@media (max-width: 575.98px) {
+  .contact-us-container {
+    padding: 30px; /* Reduce padding for small screens */
+  }
+
+  .contact-us-container h1 {
+    font-size: 1.5rem; /* Smaller heading for mobile */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 0.9rem; /* Smaller font size for input fields */
+  }
+
+  button[type="submit"] {
+    font-size: 0.9rem;
+    padding: 6px 12px; /* Adjust button size */
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .contact-us-container {
+    padding: 40px; /* Slightly reduced padding */
+  }
+
+  .contact-us-container h1 {
+    font-size: 1.75rem; /* Adjust heading size */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 1rem; /* Keep input fields slightly larger than on extra small screens */
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+    padding: 8px 14px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact-us-container {
+    padding: 50px;
+  }
+
+  .contact-us-container h1 {
+    font-size: 2rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 1rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .contact-us-container {
+    padding: 60px;
+  }
+
+  .contact-us-container h1 {
+    font-size: 2.25rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 1.1rem;
+  }
+
+  button[type="submit"] {
+    font-size: 1.1rem;
+    padding: 12px 18px;
+  }
+}
